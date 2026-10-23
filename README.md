@@ -72,7 +72,7 @@ Now, let’s get started and dig deeper into each of these steps:-
 ![Instance](https://miro.medium.com/v2/resize:fit:736/1*7B50QPeIbJ-EbQh7E-wOdQ.png)
 
 ### Step 2 — Install Jenkins, Docker and Trivy
-## 2A — To Install Jenkins
+# 2A — To Install Jenkins
  - Connect to your console, and enter these commands to Install Jenkins
 ```bash
 vim jenkins.sh
@@ -109,11 +109,11 @@ sudo chmod 777 jenkins.sh
 <EC2 Public IP Address:8080>
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-[](https://miro.medium.com/v2/resize:fit:736/1*EpiSV85C0SEvChz5zm4rIw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*EpiSV85C0SEvChz5zm4rIw.png)
 
  - Unlock Jenkins using an administrative password and install the suggested plugins.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*oFUO_Cga52FT8bscLry3_Q.png)
+![alt](https://miro.medium.com/v2/resize:fit:736/1*oFUO_Cga52FT8bscLry3_Q.png)
 
  - Jenkins will now get installed and install all the libraries.
 
