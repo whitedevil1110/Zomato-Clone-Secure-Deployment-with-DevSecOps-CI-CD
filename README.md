@@ -69,7 +69,7 @@ Now, let’s get started and dig deeper into each of these steps:-
 ### Step 1:Launch an Ubuntu(22.04) T2 Large Instance
  - Launch an AWS T2 Large Instance. Use the image as Ubuntu. You can create a new key pair or use an existing one. Enable HTTP and HTTPS settings in the Security Group and open all ports (not best case to open all ports but just for learning purposes it’s okay).
 
-[](https://miro.medium.com/v2/resize:fit:736/1*7B50QPeIbJ-EbQh7E-wOdQ.png)
+https://miro.medium.com/v2/resize:fit:736/1*7B50QPeIbJ-EbQh7E-wOdQ.png
 
 ### Step 2 — Install Jenkins, Docker and Trivy
 ## 2A — To Install Jenkins
