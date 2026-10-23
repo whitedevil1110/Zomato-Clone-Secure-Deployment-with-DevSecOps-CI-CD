@@ -117,13 +117,13 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
  - Jenkins will now get installed and install all the libraries.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*L0XlriJskwbydfaJHRcbCw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*L0XlriJskwbydfaJHRcbCw.png)
 
  - Create a user click on save and continue.
 
  - Jenkins Getting Started Screen.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*OpoGxd6FwcZeZWZKBHdlfQ.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*OpoGxd6FwcZeZWZKBHdlfQ.png)
 
 ### 2B — Install Docker
 
@@ -141,11 +141,11 @@ sudo chmod 777 /var/run/docker.sock
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 ```
 
-[](https://miro.medium.com/v2/resize:fit:736/1*gHXat-rdGvFXGYASgPQblw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*gHXat-rdGvFXGYASgPQblw.png)
 
  - Now our sonarqube is up and running
 
-[](https://miro.medium.com/v2/resize:fit:736/1*1nZijc9tTcLWN9-SieDGiw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*1nZijc9tTcLWN9-SieDGiw.png)
 
  - Enter username and password, click on login and change password
 
@@ -154,11 +154,11 @@ username admin
 password admin
 ```
 
-[](https://miro.medium.com/v2/resize:fit:736/1*fzoWe4G78pLSt3I-tiFJXA.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*fzoWe4G78pLSt3I-tiFJXA.png)
 
  - Update New password, This is Sonar Dashboard.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*6b0ljtihR81StlDV3a3d_Q.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*6b0ljtihR81StlDV3a3d_Q.png)
 
 ### 2C — Install Trivy
 
@@ -188,46 +188,46 @@ sudo apt-get install trivy -y
 
  - 3 → NodeJs Plugin (Install Without restart)
 
-[](https://miro.medium.com/v2/resize:fit:736/1*OQlTC716djHfaS3AwDOfdA.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*OQlTC716djHfaS3AwDOfdA.png)
 
 ### 3B — Configure Java and Nodejs in Global Tool Configuration
  - Goto Manage Jenkins → Tools → Install JDK(17) and NodeJs(16)→ Click on Apply and Save
 
-[](image-1.png)
+![](image-1.png)
 
-[](image-2.png)
+![](image-2.png)
 
 ### 3C — Create a Job
  - Create a job as Zomato Name, select pipeline and click on ok.
 
-[](image-3.png)
+![](image-3.png)
 
 ### Step 4 — Configure Sonar Server in Manage Jenkins
  - Grab the Public IP Address of your EC2 Instance, Sonarqube works on Port 9000, so <Public IP>:9000. Goto your Sonarqube Server. Click on Administration → Security → Users → Click on Tokens and Update Token → Give it a name → and click on Generate Token
 
-[](https://miro.medium.com/v2/resize:fit:736/1*Ziil8QHxn94AdCIsauURrg.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*Ziil8QHxn94AdCIsauURrg.png)
 
  - click on update Token
 
-[](https://miro.medium.com/v2/resize:fit:736/1*IgOyVcZ9nPjXNNGOpneISw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*IgOyVcZ9nPjXNNGOpneISw.png)
 
  - Create a token with a name and generate
 
-[](https://miro.medium.com/v2/resize:fit:736/1*uAkoy85MXN3dTWbn5Gkjuw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*uAkoy85MXN3dTWbn5Gkjuw.png)
 
  - copy Token
 
  - Goto Jenkins Dashboard → Manage Jenkins → Credentials → Add Secret Text. It should look like this.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*E-ccRm-XBqKSTUZm225hoA.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*E-ccRm-XBqKSTUZm225hoA.png)
 
  - You will this page once you click on create
 
-[](https://miro.medium.com/v2/resize:fit:736/1*4i_R7hLnBay1HgrMEkkHMA.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*4i_R7hLnBay1HgrMEkkHMA.png)
 
  - Now, go to Dashboard → Manage Jenkins → System and Add like the below image.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*L-jn869O3XQ3UQcA9dKcSQ.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*L-jn869O3XQ3UQcA9dKcSQ.png)
 
  - Click on Apply and Save
 
@@ -237,17 +237,17 @@ sudo apt-get install trivy -y
 
  - We will install a sonar scanner in the tools.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*HE_NnYldri714mObLqKxcQ.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*HE_NnYldri714mObLqKxcQ.png)
 
  - In the Sonarqube Dashboard add a quality gate also
 
  - Administration → Configuration → Webhooks
 
-[](https://miro.medium.com/v2/resize:fit:736/1*lYImJVM_K4c3xBTrT9YzHA.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*lYImJVM_K4c3xBTrT9YzHA.png)
 
  - Click on Create
 
-[](https://miro.medium.com/v2/resize:fit:736/1*Xq0O7dtRS6moajyVdZ2OJA.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*Xq0O7dtRS6moajyVdZ2OJA.png)
 
  - Add details
 
@@ -256,7 +256,7 @@ sudo apt-get install trivy -y
  <http://jenkins-public-ip:8080>/sonarqube-webhook/
 ```
 
-[](https://miro.medium.com/v2/resize:fit:736/1*NWbqEH2whidmGvvIrEuTyQ.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*NWbqEH2whidmGvvIrEuTyQ.png)
 
  - Let’s go to our Pipeline and add the script in our Pipeline Script.
 
@@ -306,24 +306,24 @@ pipeline{
 ```
  - Click on Build now, you will see the stage view like this.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*zPT6BjUUCT_xG3APTmsSLw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*zPT6BjUUCT_xG3APTmsSLw.png)
 
  - To see the report, you can go to Sonarqube Server and go to Projects.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*zPT6BjUUCT_xG3APTmsSLw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*zPT6BjUUCT_xG3APTmsSLw.png)
 
  - You can see the report has been generated and the status shows as passed. You can see that there are 1.3k lines. To see a detailed report, you can go to issues.
 
 ### Step 5 — Install OWASP Dependency Check Plugins
  - GotoDashboard → Manage Jenkins → Plugins → OWASP Dependency-Check. Click on it and install it without restart.
 
-[](image-4.png)
+![](image-4.png)
 
  - First, we configured the Plugin and next, we had to configure the Tool
 
  - Goto Dashboard → Manage Jenkins → Tools →
 
-[](image-5.png)
+![](image-5.png)
 
  - Click on Apply and Save here.
 
@@ -345,11 +345,11 @@ pipeline{
 ```
  - The stage view would look like this,
 
-[](https://miro.medium.com/v2/resize:fit:736/1*ASvOScJgoezWNQBDiulONQ.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*ASvOScJgoezWNQBDiulONQ.png)
 
  - You will see that in status, a graph will also be generated and Vulnerabilities.
 
-[](https://miro.medium.com/v2/resize:fit:736/1*HKjI3tzLa_D4NLob4nr0mw.png)
+![](https://miro.medium.com/v2/resize:fit:736/1*HKjI3tzLa_D4NLob4nr0mw.png)
 
 ---
 
